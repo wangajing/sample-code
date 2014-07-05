@@ -10,5 +10,6 @@ public class OrderService {
 	
 	public void placeOrder(Order order){
 		orderDao.saveOrder(order);
+		order.deliver();
 	}
 }

@@ -2,7 +2,7 @@ package com.jy;
 
 import java.util.List;
 
-public class Order {
+public abstract class Order {
 	private List<String> items;
 	private String shippingMethod;
 	public Order(List<String> items, String shippingMethod) {
@@ -23,5 +23,5 @@ public class Order {
 		this.shippingMethod = shippingMethod;
 	}
 	
-	
+	public abstract void deliver();
 }
