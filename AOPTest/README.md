@@ -7,7 +7,8 @@ AOPTest
 
 使用Spring 的代理模式的AOP
 =====================
-启用方法：	<aop:aspectj-autoproxy proxy-target-class="true" />
+启用方法：
+<aop:aspectj-autoproxy proxy-target-class="true" />
 
 代理模式的AOP使用Java JDK自带的代理模式实现，但该模式仅支持接口，当给类加上AOP时，Spring会
 自动加上对cglib的依赖，使用cglib的代理模式来实现。代理模式的AOP简单，但是有很大的局限性。例如
