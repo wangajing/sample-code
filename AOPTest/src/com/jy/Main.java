@@ -1,6 +1,10 @@
 package com.jy;
 
 import java.util.Arrays;
+import java.util.Enumeration;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,6 +19,5 @@ public class Main {
 				.getBean("digitalOrderService");
 		orderService.placeOrder(new DigitalOrder(Arrays.asList("Heloo", "hello"),
 				"COD"));
-		
 	}
 }
